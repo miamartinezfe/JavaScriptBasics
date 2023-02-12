@@ -1,0 +1,58 @@
+// Entidades : Representacion de conceptos del mundo real i.e Instagram -> entidades (usuarios y publicaciones)
+// Las clases pertenecen a una entidad (una plantilla de una entidad) i.e Clase : Animal
+// (Ojos, color, Habitat) Entidad -> (Perro, Pez)
+
+// Para declarar una clase tenemos 2 maneras
+
+//CONSTRUCTORES
+
+// La primera letra del nombre siempre debe ir en mayuscula
+
+/* function Auto(puertas,color,marca,ano,ruedas){
+    this.puertas = puertas;
+    this.color = color;
+    this.marca = marca;
+    this.ano = ano;
+    this.ruedas = ruedas;
+
+    this.informacion = function (){
+        console.log('Este es un ' + this.marca + ' de color ' + this.color);
+    }
+}
+
+var miPrimerAuto = new Auto(4,'azul','Ford',2018,4);
+miPrimerAuto.informacion(); */
+
+//EXPRESION DE CLASE
+
+
+class Auto{
+    constructor(puertas,color,marca,ano,ruedas){
+        this.puertas = puertas;
+        this.color = color;
+        this.marca = marca;
+        this.ano = ano;
+        this.ruedas = ruedas;
+    }
+    informacion(){
+        console.log('Este es un ' + this.marca + ' de color ' + this.color);
+    }
+}
+
+var miSegundoAuto = new Auto(4, 'Blanco','Fiat',2015,4);
+miSegundoAuto.informacion();
+
+class Football{
+    constructor(jugador){
+        this.jugador = jugador;
+    }
+    obtenerNombre(){
+        console.log(jugador);
+    }
+}
+
+var argentina = new Football('Messi');
+var Brasil = new Football('Pele');
+
+argentina.obtenerNombre();
+Brasil.obtenerNombre();
